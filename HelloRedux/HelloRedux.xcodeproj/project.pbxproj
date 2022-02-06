@@ -12,6 +12,8 @@
 		63945B3F279BFBB500375363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63945B3E279BFBB500375363 /* Assets.xcassets */; };
 		63945B42279BFBB500375363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63945B41279BFBB500375363 /* Preview Assets.xcassets */; };
 		63945B4A279BFBEE00375363 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945B49279BFBEE00375363 /* Store.swift */; };
+		63CE2B8F27AFCFF700AB2946 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */; };
+		63CE2B9127AFD09100AB2946 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE2B9027AFD09100AB2946 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		63945B3E279BFBB500375363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63945B41279BFBB500375363 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63945B49279BFBEE00375363 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		63CE2B9027AFD09100AB2946 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,19 @@
 		63945B48279BFBE100375363 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				63CE2B8D27AFCFD000AB2946 /* Reducers */,
 				63945B49279BFBEE00375363 /* Store.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		63CE2B8D27AFCFD000AB2946 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */,
+				63CE2B9027AFD09100AB2946 /* AppReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				63945B4A279BFBEE00375363 /* Store.swift in Sources */,
+				63CE2B8F27AFCFF700AB2946 /* CounterReducer.swift in Sources */,
 				63945B3D279BFBB400375363 /* ContentView.swift in Sources */,
 				63945B3B279BFBB400375363 /* HelloReduxApp.swift in Sources */,
+				63CE2B9127AFD09100AB2946 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

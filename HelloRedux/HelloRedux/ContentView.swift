@@ -15,6 +15,7 @@ struct ContentView: View {
     struct Properties {
         let counter: Int
         let onIncrement: () -> Void
+        let onIncrementAsync: () -> Void
         let onDecrement: () -> Void
         let onAdd: (Int) -> Void
     }
@@ -24,6 +25,9 @@ struct ContentView: View {
             counter: state.counter, 
             onIncrement: {
                 store.dispatch(action: IncrementAction())
+            },
+            onIncrementAsync: {
+                store.dispatch(action: IncrementActionAsync())
             },
             onDecrement: {
                 store.dispatch(action: DecrementAction())
@@ -43,6 +47,9 @@ struct ContentView: View {
                 .padding()
             Button("Increment") {
                 properties.onIncrement()
+            }
+            Button("IncrementAync") {
+                properties.onIncrementAsync()
             }
             Button("Decrement") {
                 properties.onDecrement()

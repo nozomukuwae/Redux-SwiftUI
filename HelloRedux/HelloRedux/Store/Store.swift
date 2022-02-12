@@ -29,6 +29,7 @@ struct CounterState: ReduxState {
 protocol Action {}
 
 struct IncrementAction: Action {}
+struct IncrementActionAsync: Action {}
 struct DecrementAction: Action {}
 struct AddAction: Action {
     let value: Int

@@ -12,6 +12,9 @@
 		63945B3F279BFBB500375363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63945B3E279BFBB500375363 /* Assets.xcassets */; };
 		63945B42279BFBB500375363 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63945B41279BFBB500375363 /* Preview Assets.xcassets */; };
 		63945B4A279BFBEE00375363 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945B49279BFBEE00375363 /* Store.swift */; };
+		63A2C7CA27B7AA8000A5D9DF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2C7C927B7AA8000A5D9DF /* Task.swift */; };
+		63A2C7CC27B7AAEE00A5D9DF /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2C7CB27B7AAEE00A5D9DF /* TaskReducer.swift */; };
+		63A2C7CE27B7B0FF00A5D9DF /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A2C7CD27B7B0FF00A5D9DF /* AddTaskView.swift */; };
 		63CE2B8F27AFCFF700AB2946 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */; };
 		63CE2B9127AFD09100AB2946 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE2B9027AFD09100AB2946 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +26,9 @@
 		63945B3E279BFBB500375363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63945B41279BFBB500375363 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63945B49279BFBEE00375363 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		63A2C7C927B7AA8000A5D9DF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		63A2C7CB27B7AAEE00A5D9DF /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
+		63A2C7CD27B7B0FF00A5D9DF /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		63CE2B9027AFD09100AB2946 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,9 +63,11 @@
 		63945B39279BFBB400375363 /* HelloRedux */ = {
 			isa = PBXGroup;
 			children = (
+				63A2C7C827B7AA7300A5D9DF /* Models */,
 				63945B48279BFBE100375363 /* Store */,
 				63945B3A279BFBB400375363 /* HelloReduxApp.swift */,
 				63945B3C279BFBB400375363 /* ContentView.swift */,
+				63A2C7CD27B7B0FF00A5D9DF /* AddTaskView.swift */,
 				63945B3E279BFBB500375363 /* Assets.xcassets */,
 				63945B40279BFBB500375363 /* Preview Content */,
 			);
@@ -83,11 +91,20 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		63A2C7C827B7AA7300A5D9DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63A2C7C927B7AA8000A5D9DF /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		63CE2B8D27AFCFD000AB2946 /* Reducers */ = {
 			isa = PBXGroup;
 			children = (
-				63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */,
 				63CE2B9027AFD09100AB2946 /* AppReducer.swift */,
+				63CE2B8E27AFCFF700AB2946 /* CounterReducer.swift */,
+				63A2C7CB27B7AAEE00A5D9DF /* TaskReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -165,7 +182,10 @@
 				63945B4A279BFBEE00375363 /* Store.swift in Sources */,
 				63CE2B8F27AFCFF700AB2946 /* CounterReducer.swift in Sources */,
 				63945B3D279BFBB400375363 /* ContentView.swift in Sources */,
+				63A2C7CE27B7B0FF00A5D9DF /* AddTaskView.swift in Sources */,
 				63945B3B279BFBB400375363 /* HelloReduxApp.swift in Sources */,
+				63A2C7CC27B7AAEE00A5D9DF /* TaskReducer.swift in Sources */,
+				63A2C7CA27B7AA8000A5D9DF /* Task.swift in Sources */,
 				63CE2B9127AFD09100AB2946 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = KRRD35B7L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -325,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloRedux/Preview Content\"";
+				DEVELOPMENT_TEAM = KRRD35B7L8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

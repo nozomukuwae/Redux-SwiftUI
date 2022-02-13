@@ -17,6 +17,10 @@
 		342978D8250FEC1500F20610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342978C2250FEC1500F20610 /* Assets.xcassets */; };
 		34D2F6F4251150DC00117401 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2F6F3251150DC00117401 /* AppReducer.swift */; };
 		34D2F6F5251150DC00117401 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2F6F3251150DC00117401 /* AppReducer.swift */; };
+		63D683B327B904BC00B24D5C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D683B227B904BC00B24D5C /* Webservice.swift */; };
+		63D683B427B904CA00B24D5C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D683B227B904BC00B24D5C /* Webservice.swift */; };
+		63D683B627B905A500B24D5C /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63D683B527B905A500B24D5C /* Key.plist */; };
+		63D683B727B905A500B24D5C /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63D683B527B905A500B24D5C /* Key.plist */; };
 		8D4ED7522532A0BA00400EA4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4ED7512532A0BA00400EA4 /* Movie.swift */; };
 		8D4ED7532532A0BA00400EA4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4ED7512532A0BA00400EA4 /* Movie.swift */; };
 		8DCF180F2530FE8D007A5E3F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCF180E2530FE8D007A5E3F /* View+Extensions.swift */; };
@@ -44,6 +48,8 @@
 		342978D1250FEC1500F20610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342978D2250FEC1500F20610 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		34D2F6F3251150DC00117401 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		63D683B227B904BC00B24D5C /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		63D683B527B905A500B24D5C /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
 		8D4ED7512532A0BA00400EA4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8DCF180E2530FE8D007A5E3F /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		8DCF18132530FE91007A5E3F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 		342978BF250FEC1300F20610 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				63D683B127B904B000B24D5C /* Services */,
 				8DCF18292530FEBA007A5E3F /* Utils */,
 				8DCF18232530FEAB007A5E3F /* Loaders */,
 				8DCF18182530FE9A007A5E3F /* Views */,
@@ -102,6 +109,7 @@
 				342978C0250FEC1300F20610 /* HelloReduxApp.swift */,
 				342978C1250FEC1300F20610 /* ContentView.swift */,
 				342978C2250FEC1500F20610 /* Assets.xcassets */,
+				63D683B527B905A500B24D5C /* Key.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -146,6 +154,14 @@
 				34D2F6F3251150DC00117401 /* AppReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		63D683B127B904B000B24D5C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63D683B227B904BC00B24D5C /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8DCF180B2530FE83007A5E3F /* Extensions */ = {
@@ -260,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D683B627B905A500B24D5C /* Key.plist in Resources */,
 				342978D7250FEC1500F20610 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D683B727B905A500B24D5C /* Key.plist in Resources */,
 				342978D8250FEC1500F20610 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +299,7 @@
 			files = (
 				34111D5D250FFE8C009064B8 /* Store.swift in Sources */,
 				342978D5250FEC1500F20610 /* ContentView.swift in Sources */,
+				63D683B327B904BC00B24D5C /* Webservice.swift in Sources */,
 				342978D3250FEC1500F20610 /* HelloReduxApp.swift in Sources */,
 				8DCF180F2530FE8D007A5E3F /* View+Extensions.swift in Sources */,
 				8DCF18142530FE91007A5E3F /* String+Extensions.swift in Sources */,
@@ -299,6 +318,7 @@
 			files = (
 				34111D5E250FFE8C009064B8 /* Store.swift in Sources */,
 				342978D6250FEC1500F20610 /* ContentView.swift in Sources */,
+				63D683B427B904CA00B24D5C /* Webservice.swift in Sources */,
 				342978D4250FEC1500F20610 /* HelloReduxApp.swift in Sources */,
 				8DCF18102530FE8D007A5E3F /* View+Extensions.swift in Sources */,
 				8DCF18152530FE91007A5E3F /* String+Extensions.swift in Sources */,

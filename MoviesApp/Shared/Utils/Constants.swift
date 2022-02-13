@@ -10,7 +10,15 @@ import Foundation
 struct Constants {
     
     struct ApiKeys {
-        static let omdbIdKey = "YOURAPIKEY"
+        static var omdbIdKey: String {
+            guard let keyFile = Bundle.main.path(forResource: "Key", ofType: "plist") else {
+                return ""
+            }
+            guard let keys = NSDictionary(contentsOfFile: keyFile) else {
+                return ""
+            }
+            return (keys["apiKey"] as? String) ?? ""
+        }
     }
     
     struct Urls {

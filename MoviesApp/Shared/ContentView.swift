@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @EnvironmentObject var store: Store<AppState>
+    @State private var search: String = ""
 
     struct Properties {
         let movies: [Movie]
@@ -26,15 +26,19 @@ struct ContentView: View {
         let properties = map(state: store.state.movies)
 
         VStack {
+            TextField("Search", text: $search) { _ in
+            } onCommit: {
+                properties.onSearch(search)
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+
             List(properties.movies, id: \.imdbId) { movie in
                 MovieCell(movie: movie)
             }.listStyle(PlainListStyle())
         }
         .navigationTitle("Movies")
         .embedInNavigationView()
-        .onAppear {
-            properties.onSearch("Batman")
-        }
     }
 }
 

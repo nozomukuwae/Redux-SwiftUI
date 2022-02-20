@@ -25,7 +25,16 @@ struct ContentView: View {
     var body: some View {
         let properties = map(state: store.state.movies)
 
-        return Text("Hello World")
+        VStack {
+            List(properties.movies, id: \.imdbId) { movie in
+                MovieCell(movie: movie)
+            }.listStyle(PlainListStyle())
+        }
+        .navigationTitle("Movies")
+        .embedInNavigationView()
+        .onAppear {
+            properties.onSearch("Batman")
+        }
     }
 }
 
@@ -33,5 +42,18 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let store = Store(reducer: appReducer, state: AppState(), middlewares: [moviesMiddleware()])
         return ContentView().environmentObject(store)
+    }
+}
+
+struct MovieCell: View {
+    let movie: Movie
+
+    var body: some View {
+        HStack(alignment: .top) {
+            URLImage(url: movie.poster)
+                .frame(width: 100, height: 125)
+                .cornerRadius(10)
+            Text(movie.title)
+        }
     }
 }

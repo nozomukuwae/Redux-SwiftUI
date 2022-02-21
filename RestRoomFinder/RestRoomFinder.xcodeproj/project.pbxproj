@@ -21,6 +21,8 @@
 		631849AE27C3AB3E0023E7AC /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631849AC27C3AB3E0023E7AC /* Restroom.swift */; };
 		6330E25B27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */; };
 		6330E25C27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */; };
+		63CB38A727C3B488005A5E38 /* RestroomMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB38A627C3B488005A5E38 /* RestroomMiddleware.swift */; };
+		63CB38A827C3B488005A5E38 /* RestroomMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB38A627C3B488005A5E38 /* RestroomMiddleware.swift */; };
 		8D29726925374665009F202C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29726825374665009F202C /* Constants.swift */; };
 		8D29726A25374665009F202C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29726825374665009F202C /* Constants.swift */; };
 		8D29727125374B62009F202C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29727025374B62009F202C /* HomeScreen.swift */; };
@@ -46,6 +48,7 @@
 		631849A927C3AB150023E7AC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		631849AC27C3AB3E0023E7AC /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
 		6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomReducer.swift; sourceTree = "<group>"; };
+		63CB38A627C3B488005A5E38 /* RestroomMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomMiddleware.swift; sourceTree = "<group>"; };
 		8D29726825374665009F202C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D29727025374B62009F202C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8D415FA82538AA22007650D2 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 		8D297252253743EF009F202C /* Middlewares */ = {
 			isa = PBXGroup;
 			children = (
+				63CB38A627C3B488005A5E38 /* RestroomMiddleware.swift */,
 			);
 			path = Middlewares;
 			sourceTree = "<group>";
@@ -311,6 +315,7 @@
 				8D54C762253797C300D42BEB /* String+Extensions.swift in Sources */,
 				8D29727125374B62009F202C /* HomeScreen.swift in Sources */,
 				631849AD27C3AB3E0023E7AC /* Restroom.swift in Sources */,
+				63CB38A727C3B488005A5E38 /* RestroomMiddleware.swift in Sources */,
 				342978D3250FEC1500F20610 /* HelloReduxApp.swift in Sources */,
 				8D29726925374665009F202C /* Constants.swift in Sources */,
 				34D2F6F4251150DC00117401 /* AppReducer.swift in Sources */,
@@ -329,6 +334,7 @@
 				8D54C763253797C300D42BEB /* String+Extensions.swift in Sources */,
 				8D29727225374B62009F202C /* HomeScreen.swift in Sources */,
 				631849AE27C3AB3E0023E7AC /* Restroom.swift in Sources */,
+				63CB38A827C3B488005A5E38 /* RestroomMiddleware.swift in Sources */,
 				342978D4250FEC1500F20610 /* HelloReduxApp.swift in Sources */,
 				8D29726A25374665009F202C /* Constants.swift in Sources */,
 				34D2F6F5251150DC00117401 /* AppReducer.swift in Sources */,

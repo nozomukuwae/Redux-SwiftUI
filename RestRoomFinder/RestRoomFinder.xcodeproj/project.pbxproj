@@ -19,6 +19,8 @@
 		631849AB27C3AB150023E7AC /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631849A927C3AB150023E7AC /* WebService.swift */; };
 		631849AD27C3AB3E0023E7AC /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631849AC27C3AB3E0023E7AC /* Restroom.swift */; };
 		631849AE27C3AB3E0023E7AC /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631849AC27C3AB3E0023E7AC /* Restroom.swift */; };
+		6330E25B27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */; };
+		6330E25C27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */; };
 		8D29726925374665009F202C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29726825374665009F202C /* Constants.swift */; };
 		8D29726A25374665009F202C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29726825374665009F202C /* Constants.swift */; };
 		8D29727125374B62009F202C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29727025374B62009F202C /* HomeScreen.swift */; };
@@ -43,6 +45,7 @@
 		34D2F6F3251150DC00117401 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		631849A927C3AB150023E7AC /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		631849AC27C3AB3E0023E7AC /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
+		6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomReducer.swift; sourceTree = "<group>"; };
 		8D29726825374665009F202C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8D29727025374B62009F202C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8D415FA82538AA22007650D2 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
@@ -143,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				34D2F6F3251150DC00117401 /* AppReducer.swift */,
+				6330E25A27C3AF3A008E2E82 /* RestroomReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -303,6 +307,7 @@
 				34111D5D250FFE8C009064B8 /* Store.swift in Sources */,
 				8D415FA92538AA22007650D2 /* Actions.swift in Sources */,
 				8D54C7552537506100D42BEB /* View+Extensions.swift in Sources */,
+				6330E25B27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */,
 				8D54C762253797C300D42BEB /* String+Extensions.swift in Sources */,
 				8D29727125374B62009F202C /* HomeScreen.swift in Sources */,
 				631849AD27C3AB3E0023E7AC /* Restroom.swift in Sources */,
@@ -320,6 +325,7 @@
 				34111D5E250FFE8C009064B8 /* Store.swift in Sources */,
 				8D415FAA2538AA22007650D2 /* Actions.swift in Sources */,
 				8D54C7562537506100D42BEB /* View+Extensions.swift in Sources */,
+				6330E25C27C3AF3A008E2E82 /* RestroomReducer.swift in Sources */,
 				8D54C763253797C300D42BEB /* String+Extensions.swift in Sources */,
 				8D29727225374B62009F202C /* HomeScreen.swift in Sources */,
 				631849AE27C3AB3E0023E7AC /* Restroom.swift in Sources */,

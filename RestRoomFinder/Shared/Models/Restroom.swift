@@ -13,7 +13,7 @@ struct Restroom: Decodable {
     let street: String
     let city: String
     let state: String
-    let accesible: Bool
+    let accessible: Bool
     let unisex: Bool
     let distance: Double
     let comment: String?

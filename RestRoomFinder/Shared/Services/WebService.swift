@@ -19,6 +19,7 @@ class WebService {
             completion(.failure(.badURL))
             return
         }
+        print(url)
 
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {

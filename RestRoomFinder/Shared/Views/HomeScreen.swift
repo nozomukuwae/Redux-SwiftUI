@@ -41,7 +41,7 @@ struct HomeScreen: View {
                     .padding([.leading])
                 Spacer()
                 Button(action: {
-//                    locationManager.updateLocation()
+                    locationManager.updateLocation()
                 }) {
                     Image(systemName: "arrow.clockwise.circle")
                         .font(.title)
@@ -51,7 +51,7 @@ struct HomeScreen: View {
 
             List(properties.restrooms, id: \.id) {
                 RestroomCell(restroom: $0)
-            }
+            }.buttonStyle(PlainButtonStyle())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.orange)
@@ -84,7 +84,14 @@ struct RestroomCell: View {
                 .font(.subheadline)
                 .opacity(0.5)
 
-            Button("Directions") {}
+            Button("Directions") {
+                guard let url = URL(
+                    string: "http://maps.apple.com/?address=\(restroom.address.encodeURL() ?? "")"
+                ),
+                      UIApplication.shared.canOpenURL(url) else { return }
+
+                UIApplication.shared.open(url)
+            }
             .font(.caption)
             .foregroundColor(Color.white)
             .padding(6)
